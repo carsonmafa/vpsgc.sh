@@ -19,7 +19,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update > /dev/null 2>&1
 sudo apt install brave-browser > /dev/null 2>&1
 echo "===================80%"
-sudo service xrdp start > /dev/null 2>&1
+sudo service xfce4 start > /dev/null 2>&1
 echo "=======================100%"
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
